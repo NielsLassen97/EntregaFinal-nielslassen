@@ -1,0 +1,390 @@
+@charset "UTF-8";
+/*Variables*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f5f5; /* Color de fondo opcional */
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%; /* Ajusta el ancho según tu preferencia */
+  max-width: 1200px; /* Ancho máximo para el contenedor */
+  /* background-color: #fae4e4;    Color de fondo opcional */
+  /*padding: 20px;             Espaciado interno opcional */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Sombra opcional para el contenedor */
+  font-family: "Poppins", sans-serif;
+}
+
+.bg {
+  background-color: #f8f5f5;
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/*Header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre el logo y el nav */
+  margin-bottom: 20px; /* Espacio debajo del header */
+  padding: 20px;
+}
+
+.logocedp {
+  width: 150px; /* Ajusta el tamaño del logo */
+  height: auto;
+  padding-left: 60px;
+  margin-right: 20px; /* Espacio entre el logo y el nav */
+  transition: transform 0.3s ease;
+}
+.logocedp:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del texto ligeramente */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Alinear elementos en una fila, uno al lado del otro */
+}
+
+nav ul li {
+  margin-right: 10px; /* Espacio entre los elementos */
+}
+
+nav ul li a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: #ff1212; /* Color del texto */
+  padding: 0.5em 1em; /* Espaciado interno */
+  font-size: 1.25rem;
+  text-transform: uppercase; /*Mayusculas*/
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+nav ul li a:hover {
+  color: #800000; /* Color del texto al pasar el cursor */
+  transform: scale(1.1); /* Aumenta el tamaño del texto ligeramente */
+}
+
+.disabled {
+  pointer-events: none; /* Evitar que se pueda hacer clic en el enlace */
+  color: #800000; /* Cambiar el color del texto */
+  font-weight: 600; /* Agregar subrayado */
+  cursor: not-allowed; /* Cambiar el cursor al estilo "no permitido" */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logocedp {
+    width: 80px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    font-size: 1rem;
+  }
+}
+/*Hero section*/
+.hero-section {
+  width: 100%;
+  height: 350px; /* Ajusta la altura según tu preferencia */
+  background-image: url("../images/herobg.png"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin: 0;
+  padding: 0;
+}
+.hero-section h1, .hero-section p {
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.568);
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  /* Tu otro código */
+  color: white;
+}
+
+.hero-contenido {
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.hero-contenido h1 {
+  font-size: 60px;
+}
+
+.hero-contenido p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.hero-boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #15b906;
+  border: black 1px solid;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.hero-boton:hover {
+  transform: scale(1.05);
+}
+
+.hero-boton:hover {
+  background-color: #008026;
+}
+
+.doble-seccion {
+  display: flex;
+}
+
+.texto {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding: 20px; /* Espacio interno */
+  padding-top: 0;
+}
+
+.texto h2 {
+  font-size: 30px;
+}
+
+.texto p {
+  padding-top: 10px;
+}
+
+.video {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding: 20px; /* Espacio interno */
+}
+
+.video iframe {
+  width: 100%; /* Video ocupa todo el ancho */
+  height: 100%; /* Video ocupa todo el alto */
+}
+
+/**/
+.doble-seccion {
+  display: flex;
+}
+.doble-seccion h2 {
+  font-weight: 700;
+}
+
+.imagen {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding: 20px; /* Espacio interno */
+}
+
+/*.imagen img{
+    width: 100%;
+}*/
+.texto {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding: 20px; /* Espacio interno */
+}
+
+.texto h2 {
+  margin-top: 0; /* Elimina el margen superior del título */
+}
+
+/*actividades section*/
+.actividades-section {
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.actividades-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.actividades-section p {
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.actividades-img {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 0 10px; /* Espacio adicional en los bordes del contenedor */
+}
+
+.actividades-img img {
+  padding: 50px;
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+  margin: 0 -5px; /* Espacio negativo para compensar el espacio entre las imágenes */
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.actividades-img img:hover {
+  filter: sepia(50%);
+  transform: scale(1.05);
+}
+
+/*contacto section*/
+.contacto-section {
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contacto-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contacto-section p:first-of-type {
+  padding-top: 20px;
+}
+
+.contacto-section p {
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+/*Titulos*/
+.indexpage h1, .nosotrospage h1, .clasespage h1, .torneospage h1, .contactopage h1 {
+  font-weight: 700;
+}
+.indexpage h2, .nosotrospage h2, .clasespage h2, .torneospage h2, .contactopage h2 {
+  font-weight: 700;
+  display: inline;
+  position: relative;
+  text-decoration: none;
+}
+.indexpage h2:after, .nosotrospage h2:after, .clasespage h2:after, .torneospage h2:after, .contactopage h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.2em;
+  width: 100%;
+  height: 0.5rem;
+  background-color: red;
+  z-index: -1;
+}
+
+/*Contacto*/
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #15b906;
+  border: black 1px solid;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+  background-color: #108f05;
+}
+
+.btn-contacto {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0677b9;
+  border: black 1px solid;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-contacto:hover {
+  transform: scale(1.05);
+  background-color: #065e91;
+}
+
+/* styles.css */
+/* Footer */
+footer {
+  background-color: #2b0303; /* Fondo azul oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
+  text-align: center;
+  border-top: 9px solid rgba(255, 0, 0, 0.267);
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: red; /* Color al pasar el cursor, puedes cambiarlo */
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+.footer-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: grey;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: red; /* Color al pasar el cursor, puedes cambiarlo */
+}
+
+/*# sourceMappingURL=styles.css.map */
