@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    margin: 0;
+    padding: 0;
+    background-color: $rosa; /* Color de fondo opcional */
+    font-family: $fuente_principal;
+}
+
+.container {
+    width: 90%;               /* Ajusta el ancho según tu preferencia */
+    max-width: 1200px;        /* Ancho máximo para el contenedor */
+   /* background-color: #fae4e4;    Color de fondo opcional */
+    /*padding: 20px;             Espaciado interno opcional */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /*Sombra opcional para el contenedor */
+    font-family: $fuente_principal;
+}
+.bg {
+    background-color: $rosa;
+}
+
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
